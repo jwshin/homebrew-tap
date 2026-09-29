@@ -21,25 +21,12 @@ creates a default config if needed. See the [configuration reference](https://gi
 Enable **Launch at login** in the installed app's menu to start tile automatically. This is an
 opt-in macOS setting for each user and Mac. If approval is required, use **Allow Launch at Login…**.
 
-Quit tile before updating, then run:
-
-```sh
-brew update
-brew upgrade --cask jwshin/tap/tile
-open /Applications/tile.app
-```
-
-Version 0.1.0 was republished with Launch at login. If you installed the original 0.1.0, quit tile and
-run `brew update && brew reinstall --cask jwshin/tap/tile`; `brew upgrade` cannot detect this replacement.
-
-An updated ad-hoc build may need renewed macOS approval and Accessibility access. Uninstall with
-`brew uninstall --cask jwshin/tap/tile`; your configuration is retained.
+Uninstall with `brew uninstall --cask jwshin/tap/tile`; your configuration is retained.
 
 ## Maintaining the cask
 
 Update `version` and `sha256` in `Casks/tile.rb` after publishing a new
 [tile release](https://github.com/jwshin/tile/releases). The SHA-256 must match the ZIP asset;
-normally publish fixes under a new version. For an explicitly requested same-version re-release,
-follow the release guide's preservation, tag, checksum, and reinstall procedure. Run `brew style Casks/tile.rb` and
+publish subsequent releases under a new version. Run `brew style Casks/tile.rb` and
 `brew audit --cask --online jwshin/tap/tile`, then verify installation. Release packaging instructions
 live in [tile's release guide](https://github.com/jwshin/tile/blob/main/dev-docs/releasing.md).
