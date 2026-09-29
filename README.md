@@ -10,7 +10,7 @@ brew install --cask jwshin/tap/tile
 open /Applications/tile.app
 ```
 
-Quit any existing tile instance or other window manager before launching. Version 0.1.0 is ad-hoc
+Quit any existing tile instance or other window manager before launching. The app is ad-hoc
 signed and **not notarized**. After the first launch attempt, use **System Settings → Privacy & Security →
 Open Anyway** if macOS blocks it ([Apple's instructions](https://support.apple.com/en-us/102445)).
 Then grant tile Accessibility access. Homebrew and the cask do not disable Gatekeeper or remove quarantine.
