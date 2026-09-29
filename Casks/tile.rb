@@ -1,6 +1,6 @@
 cask "tile" do
-  version "0.3.0"
-  sha256 "0529968648e41230385136e8aee904732ec34de2d20a3d9879de2150cc3e846e"
+  version "0.4.0"
+  sha256 "3a7cf13cdfc67948f2a41fdd9fd8f70c0364385b5d9acc376fdeb28d9045c6cc"
 
   url "https://github.com/jwshin/tile/releases/download/v#{version}/tile-#{version}-macos-arm64.zip"
   name "tile"
