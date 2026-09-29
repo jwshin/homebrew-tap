@@ -1,6 +1,6 @@
 cask "tile" do
   version "0.1.0"
-  sha256 "8e17b43c7fbceb9a254c5572efc8de06e7413b00bff8309ef326c5effa67bb3d"
+  sha256 "158d84e246de8109b8564fd62bb23e6a3fc669c62dfc133612fed5acbe3212b7"
 
   url "https://github.com/jwshin/tile/releases/download/v#{version}/tile-#{version}-macos-arm64.zip"
   name "tile"
@@ -18,6 +18,7 @@ cask "tile" do
     Open Anyway if macOS blocks it, then grant tile Accessibility access.
 
     Quit any other tile instance before opening /Applications/tile.app.
+    Enable Launch at login in tile's menu to start automatically.
     Configuration is stored in ~/.tile.toml and is preserved on uninstall.
   EOS
 end
